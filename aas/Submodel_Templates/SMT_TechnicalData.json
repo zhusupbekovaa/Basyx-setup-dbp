@@ -1,0 +1,33 @@
+{
+  "idShort": "TechnicalData",
+  "id": "urn:uuid:technical-data-template",
+  "kind": "Template",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://example.org/semantic/technical-data"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "idShort": "nominalVoltage",
+      "modelType": "Property",
+      "valueType": "double",
+      "unit": "V"
+    },
+    {
+      "idShort": "nominalPower",
+      "modelType": "Property",
+      "valueType": "double",
+      "unit": "W"
+    },
+    {
+      "idShort": "weight",
+      "modelType": "Property",
+      "valueType": "double",
+      "unit": "kg"
+    }
+  ]
+}

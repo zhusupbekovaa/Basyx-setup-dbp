@@ -1,0 +1,30 @@
+{
+  "idShort": "ManufacturerInformation",
+  "id": "urn:uuid:manufacturer-information-template",
+  "kind": "Template",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://example.org/semantic/manufacturer-information"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "idShort": "manufacturerName",
+      "modelType": "Property",
+      "valueType": "string"
+    },
+    {
+      "idShort": "manufacturerAddress",
+      "modelType": "Property",
+      "valueType": "string"
+    },
+    {
+      "idShort": "manufacturerContact",
+      "modelType": "Property",
+      "valueType": "string"
+    }
+  ]
+}

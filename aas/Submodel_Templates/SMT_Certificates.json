@@ -1,0 +1,30 @@
+{
+  "idShort": "Certificates",
+  "id": "urn:uuid:certificates-template",
+  "kind": "Template",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://example.org/semantic/certificates"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "idShort": "certificateId",
+      "modelType": "Property",
+      "valueType": "string"
+    },
+    {
+      "idShort": "issuingBody",
+      "modelType": "Property",
+      "valueType": "string"
+    },
+    {
+      "idShort": "issueDate",
+      "modelType": "Property",
+      "valueType": "date"
+    }
+  ]
+}

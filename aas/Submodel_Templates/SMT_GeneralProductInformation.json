@@ -1,0 +1,30 @@
+{
+  "idShort": "GeneralProductInformation",
+  "id": "urn:uuid:general-product-information-template",
+  "kind": "Template",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://example.org/semantic/general-product-information"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "idShort": "productType",
+      "modelType": "Property",
+      "valueType": "string"
+    },
+    {
+      "idShort": "productionDate",
+      "modelType": "Property",
+      "valueType": "date"
+    },
+    {
+      "idShort": "productionLocation",
+      "modelType": "Property",
+      "valueType": "string"
+    }
+  ]
+}

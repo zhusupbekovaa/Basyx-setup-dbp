@@ -1,0 +1,30 @@
+{
+  "idShort": "Documentation",
+  "id": "urn:uuid:documentation-template",
+  "kind": "Template",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://example.org/semantic/documentation"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "idShort": "documentName",
+      "modelType": "Property",
+      "valueType": "string"
+    },
+    {
+      "idShort": "documentType",
+      "modelType": "Property",
+      "valueType": "string"
+    },
+    {
+      "idShort": "documentUrl",
+      "modelType": "Property",
+      "valueType": "string"
+    }
+  ]
+}
