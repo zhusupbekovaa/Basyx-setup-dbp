@@ -1,36 +1,22 @@
 {
+  "id": "urn:uuid:smt-identification",
   "idShort": "Identification",
-  "id": "urn:uuid:identification-template",
   "kind": "Template",
   "semanticId": {
     "keys": [
-      {
-        "type": "GlobalReference",
-        "value": "https://example.org/semantic/identification"
-      }
+      { "type": "GlobalReference", "value": "0173-1#02-AAS001#001" }
     ]
   },
   "submodelElements": [
     {
-      "idShort": "assetId",
+      "idShort": "BatteryID",
       "modelType": "Property",
       "valueType": "string",
-      "description": [
-        {
-          "language": "en",
-          "text": "Globally unique asset identifier"
-        }
+      "description": [{ "language": "de", "text": "Eindeutige Batterie-ID (DBP)" }],
+      "qualifiers": [
+        { "type": "Obligation", "value": "Mandatory" },
+        { "type": "RegulatorySource", "value": "EU 2023/1542 Art. 77" }
       ]
-    },
-    {
-      "idShort": "serialNumber",
-      "modelType": "Property",
-      "valueType": "string"
-    },
-    {
-      "idShort": "productName",
-      "modelType": "Property",
-      "valueType": "string"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "urn:uuid:battery-module-aas-001",
+  "idShort": "BatteryModule_AAS",
+  "assetInformation": {
+    "assetKind": "Template",
+    "globalAssetId": "urn:example:battery-module:MOD-2024-0001",
+    "specificAssetIds": [
+      {
+        "name": "BatteryID",
+        "value": "MOD-2024-0001",
+        "externalSubjectId": {
+          "type": "IRI",
+          "value": "https://example.org/dbp/battery-id"
+        }
+      }
+    ]
+  },
+  "submodels": [
+    { "keys": [{ "type": "Submodel", "value": "urn:uuid:sm-identification" }] },
+    { "keys": [{ "type": "Submodel", "value": "urn:uuid:sm-manufacturer" }] },
+    { "keys": [{ "type": "Submodel", "value": "urn:uuid:sm-material-composition" }] },
+    { "keys": [{ "type": "Submodel", "value": "urn:uuid:sm-carbon-footprint" }] },
+    { "keys": [{ "type": "Submodel", "value": "urn:uuid:sm-performance" }] },
+    { "keys": [{ "type": "Submodel", "value": "urn:uuid:sm-safety" }] },
+    { "keys": [{ "type": "Submodel", "value": "urn:uuid:sm-end-of-life" }] }
+  ]
+}

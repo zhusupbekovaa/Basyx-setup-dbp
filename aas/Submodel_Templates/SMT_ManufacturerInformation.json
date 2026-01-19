@@ -1,30 +1,32 @@
 {
+  "id": "urn:uuid:smt-manufacturer-information",
   "idShort": "ManufacturerInformation",
-  "id": "urn:uuid:manufacturer-information-template",
   "kind": "Template",
-  "semanticId": {
-    "keys": [
-      {
-        "type": "GlobalReference",
-        "value": "https://example.org/semantic/manufacturer-information"
-      }
-    ]
-  },
   "submodelElements": [
     {
-      "idShort": "manufacturerName",
+      "idShort": "ManufacturerName",
       "modelType": "Property",
-      "valueType": "string"
+      "valueType": "string",
+      "qualifiers": [
+        { "type": "Obligation", "value": "Mandatory" },
+        { "type": "RegulatorySource", "value": "EU 2023/1542 Annex XIII" }
+      ]
     },
     {
-      "idShort": "manufacturerAddress",
+      "idShort": "ManufacturerAddress",
       "modelType": "Property",
-      "valueType": "string"
+      "valueType": "string",
+      "qualifiers": [
+        { "type": "Obligation", "value": "Mandatory" }
+      ]
     },
     {
-      "idShort": "manufacturerContact",
+      "idShort": "ContactInformation",
       "modelType": "Property",
-      "valueType": "string"
+      "valueType": "string",
+      "qualifiers": [
+        { "type": "Obligation", "value": "Should" }
+      ]
     }
   ]
 }
