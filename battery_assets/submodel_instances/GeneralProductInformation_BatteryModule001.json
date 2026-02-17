@@ -1,0 +1,296 @@
+{
+  "id": "urn:uuid:submodel-general-product-information-battery-001",
+  "idShort": "GeneralProductInformation",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://batterypass.github.io/BatteryPassDataModel/io.BatteryPass.GeneralProductInformation/1.2.0"
+      }
+    ]
+  },
+  "submodelElements": [
+
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "Identification",
+      "value": [
+
+        {
+          "modelType": "Property",
+          "idShort": "batteryPassportIdentifier",
+          "valueType": "xs:string",
+          "value": "BP-2026-00001",
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "EU-BatteryRegulation-2023/1542-PassportID"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "secondaryIdentifier",
+          "valueType": "xs:string",
+          "value": "SEC-2026-00001",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-BAF053#002"
+              }
+            ]
+          }
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "productIdentifier",
+          "valueType": "xs:string",
+          "value": "MOD-001-2026",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-BAF016#002"
+              }
+            ]
+          }
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "batchIdentifier",
+          "valueType": "xs:string",
+          "value": "BATCH-2026-A",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-BAF053#002"
+              }
+            ]
+          }
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "modelIdentifier",
+          "valueType": "xs:string",
+          "value": "MODEL-X1",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-BAF017#002"
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "Manufacturer",
+      "value": [
+
+        {
+          "modelType": "Property",
+          "idShort": "manufacturerName",
+          "valueType": "xs:string",
+          "value": "Example Battery GmbH",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO677#003"
+              }
+            ]
+          }
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "manufacturerIdentifier",
+          "valueType": "xs:string",
+          "value": "ORG-EXMPL-001",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO676#002"
+              }
+            ]
+          }
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "manufacturerAddress",
+          "valueType": "xs:string",
+          "value": "Industriestr. 5, 10115 Berlin, DE",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO678#002"
+              }
+            ]
+          }
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "manufacturerCountry",
+          "valueType": "xs:string",
+          "value": "Germany",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO134#002"
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "batteryCategory",
+      "valueType": "xs:string",
+      "value": "electric vehicle battery",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "0173-1#02-BAF001#002"
+          }
+        ]
+      }
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "batteryStatus",
+      "valueType": "xs:string",
+      "value": "original",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "0173-1#02-BAF054#002"
+          }
+        ]
+      }
+    },
+
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "ImportantDates",
+      "value": [
+
+        {
+          "modelType": "Property",
+          "idShort": "manufacturingDate",
+          "valueType": "xs:date",
+          "value": "2026-01-15",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO019#002"
+              }
+            ]
+          }
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "puttingIntoServiceDate",
+          "valueType": "xs:date",
+          "value": "2026-02-01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO020#002"
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "overallMass",
+      "valueType": "xs:double",
+      "value": "45.2",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "0173-1#02-AAO728#005"
+          }
+        ]
+      }
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "warrantyPeriodMonths",
+      "valueType": "xs:int",
+      "value": "24",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "0173-1#02-AAO727#002"
+          }
+        ]
+      }
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "placeOfManufacture",
+      "valueType": "xs:string",
+      "value": "Berlin, Germany",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "0173-1#02-AAO680#002"
+          }
+        ]
+      }
+    }
+
+  ]
+}

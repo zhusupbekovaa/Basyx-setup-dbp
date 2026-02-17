@@ -1,0 +1,109 @@
+{
+  "id": "urn:uuid:submodel-labels-battery-001",
+  "idShort": "Labels",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://batterypass.github.io/BatteryPassDataModel/io.BatteryPass.Labels/1.2.0"
+      }
+    ]
+  },
+  "submodelElements": [
+
+    {
+      "modelType": "Property",
+      "idShort": "labelIdentifier",
+      "valueType": "xs:string",
+      "value": "LBL-2026-0001",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "0173-1#02-BAF053#002"
+          }
+        ]
+      }
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "labelType",
+      "valueType": "xs:string",
+      "value": "Battery Passport QR Code",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "0173-1#02-AAO225#002"
+          }
+        ]
+      }
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "labelVersion",
+      "valueType": "xs:string",
+      "value": "1.2.0"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "labelDescription",
+      "valueType": "xs:string",
+      "value": "EU Battery Passport Label"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "labelLanguage",
+      "valueType": "xs:string",
+      "value": "de"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "labelValidFrom",
+      "valueType": "xs:date",
+      "value": "2026-01-01"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "labelValidUntil",
+      "valueType": "xs:date",
+      "value": ""
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "labelImageLink",
+      "valueType": "xs:string",
+      "value": "https://example.com/qrcode/BP-2026-00001.png"
+    },
+
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "LabelFields",
+      "value": [
+        {
+          "modelType": "Property",
+          "idShort": "fieldName",
+          "valueType": "xs:string",
+          "value": "Battery Passport Link"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "fieldValue",
+          "valueType": "xs:string",
+          "value": "https://battery-passport.eu/BP-2026-00001"
+        }
+      ]
+    }
+  ]
+}

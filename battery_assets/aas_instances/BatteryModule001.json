@@ -1,0 +1,19 @@
+{
+  "id": "urn:uuid:aas-battery-module-001",
+  "idShort": "BatteryModule001",
+  "assetInformation": {
+    "assetKind": "Instance",
+    "globalAssetId": "urn:uuid:physical-battery-module-001"
+  },
+  "submodels": [
+    {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "urn:uuid:submodel-general-product-information-battery-001"
+        }
+      ]
+    }
+  ]
+}
