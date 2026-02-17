@@ -1,19 +1,51 @@
 {
+  // Globale eindeutige ID der AAS (digitaler Zwilling)
+  // MUSS weltweit eindeutig sein
+  // Darf sich niemals ändern
   "id": "urn:uuid:aas-battery-module-001",
+
+  // Menschlich lesbarer Kurzname
+  // Nur lokal relevant
+  // Nicht als globale Identität verwenden
   "idShort": "BatteryModule001",
+
   "assetInformation": {
+
+    // Gibt an, ob es sich um:
+    // "Instance" → echtes physisches Objekt
+    // "Type" → generischer Typ
+    // Für reale Batterie-Module immer "Instance"
     "assetKind": "Instance",
+
+    // Identität des PHYSISCHEN Assets
+    // Nicht die AAS!
+    // Sollte Seriennummer, GS1, DMC oder eindeutige Modul-ID sein
+    // Darf sich niemals ändern
     "globalAssetId": "urn:uuid:physical-battery-module-001"
   },
+
+  // Liste aller Submodel Referenzen
+  // Hier werden nur REFERENZEN gespeichert
+  // Das Submodel selbst liegt im Submodel Repository
   "submodels": [
+
     {
+      // Referenztyp laut AAS 3.0 Spezifikation
       "type": "ModelReference",
+
       "keys": [
         {
+          // Typ des referenzierten Elements
+          // Hier: Submodel
           "type": "Submodel",
+
+          // Die globale ID des Submodels
+          // MUSS exakt mit der ID im Submodel JSON übereinstimmen
+          // Wenn falsch → BaSyx 404 Fehler
           "value": "urn:uuid:submodel-general-product-information-battery-001"
         }
       ]
     }
+
   ]
 }

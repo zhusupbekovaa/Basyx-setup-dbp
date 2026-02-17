@@ -1,0 +1,109 @@
+{
+  "id": "urn:uuid:submodel-carbon-footprint-battery-001",
+  "idShort": "CarbonFootprintForBatteries",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://batterypass.github.io/BatteryPassDataModel/io.BatteryPass.CarbonFootprint/1.2.0"
+      }
+    ]
+  },
+  "submodelElements": [
+
+    {
+      "modelType": "Property",
+      "idShort": "totalCarbonFootprint",
+      "valueType": "xs:double",
+      "value": "0.0"
+    },
+
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "LifecyclePhaseEmissions",
+      "value": [
+
+        {
+          "modelType": "Property",
+          "idShort": "cradleToGateEmission",
+          "valueType": "xs:double",
+          "value": "0.0"
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "manufacturingEmission",
+          "valueType": "xs:double",
+          "value": "0.0"
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "distributionEmission",
+          "valueType": "xs:double",
+          "value": "0.0"
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "usePhaseEmission",
+          "valueType": "xs:double",
+          "value": "0.0"
+        },
+
+        {
+          "modelType": "Property",
+          "idShort": "endOfLifeEmission",
+          "valueType": "xs:double",
+          "value": "0.0"
+        }
+
+      ]
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "carbonFootprintMethodology",
+      "valueType": "xs:string",
+      "value": ""
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "referenceFramework",
+      "valueType": "xs:string",
+      "value": ""
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "carbonFootprintUnit",
+      "valueType": "xs:string",
+      "value": "kg CO2e"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "carbonFootprintDate",
+      "valueType": "xs:date",
+      "value": ""
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "studyOrReportLink",
+      "valueType": "xs:string",
+      "value": ""
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "performanceClass",
+      "valueType": "xs:string",
+      "value": ""
+    }
+
+  ]
+}
