@@ -96,12 +96,13 @@ services:
     depends_on:
       mongo:
         condition: service_healthy
-  keycloak:
-    image: quay.io/keycloak/keycloak:23.0
-    container_name: keycloak
-    command: start-dev
+  dbp-frontend:
+    build: ./dbp-frontend
+    container_name: dbp-frontend
     ports:
-      - "8086:8080"
+      - "8090:3000"
     environment:
-      KEYCLOAK_ADMIN: admin
-      KEYCLOAK_ADMIN_PASSWORD: admin
+      AAS_API: http://aas-env:8081
+    depends_on:
+      - aas-env
+    restart: always      

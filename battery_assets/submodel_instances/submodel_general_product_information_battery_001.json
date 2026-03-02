@@ -12,12 +12,10 @@
     ]
   },
   "submodelElements": [
-
     {
       "modelType": "SubmodelElementCollection",
       "idShort": "Identification",
       "value": [
-
         {
           "modelType": "Property",
           "idShort": "batteryPassportIdentifier",
@@ -35,7 +33,6 @@
             }
           ]
         },
-
         {
           "modelType": "Property",
           "idShort": "secondaryIdentifier",
@@ -51,7 +48,6 @@
             ]
           }
         },
-
         {
           "modelType": "Property",
           "idShort": "productIdentifier",
@@ -67,7 +63,6 @@
             ]
           }
         },
-
         {
           "modelType": "Property",
           "idShort": "batchIdentifier",
@@ -83,7 +78,6 @@
             ]
           }
         },
-
         {
           "modelType": "Property",
           "idShort": "modelIdentifier",
@@ -101,12 +95,10 @@
         }
       ]
     },
-
     {
       "modelType": "SubmodelElementCollection",
       "idShort": "Manufacturer",
       "value": [
-
         {
           "modelType": "Property",
           "idShort": "manufacturerName",
@@ -122,7 +114,6 @@
             ]
           }
         },
-
         {
           "modelType": "Property",
           "idShort": "manufacturerIdentifier",
@@ -138,7 +129,6 @@
             ]
           }
         },
-
         {
           "modelType": "Property",
           "idShort": "manufacturerAddress",
@@ -154,7 +144,6 @@
             ]
           }
         },
-
         {
           "modelType": "Property",
           "idShort": "manufacturerCountry",
@@ -172,7 +161,6 @@
         }
       ]
     },
-
     {
       "modelType": "Property",
       "idShort": "batteryCategory",
@@ -188,7 +176,6 @@
         ]
       }
     },
-
     {
       "modelType": "Property",
       "idShort": "batteryStatus",
@@ -204,12 +191,10 @@
         ]
       }
     },
-
     {
       "modelType": "SubmodelElementCollection",
       "idShort": "ImportantDates",
       "value": [
-
         {
           "modelType": "Property",
           "idShort": "manufacturingDate",
@@ -225,7 +210,6 @@
             ]
           }
         },
-
         {
           "modelType": "Property",
           "idShort": "puttingIntoServiceDate",
@@ -243,7 +227,6 @@
         }
       ]
     },
-
     {
       "modelType": "Property",
       "idShort": "overallMass",
@@ -259,7 +242,6 @@
         ]
       }
     },
-
     {
       "modelType": "Property",
       "idShort": "warrantyPeriodMonths",
@@ -275,7 +257,6 @@
         ]
       }
     },
-
     {
       "modelType": "Property",
       "idShort": "placeOfManufacture",
@@ -290,7 +271,84 @@
           }
         ]
       }
+    },
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "LifecycleHistory",
+      "value": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Event001",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "eventType",
+              "valueType": "xs:string",
+              "value": "OwnershipTransfer"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "eventDate",
+              "valueType": "xs:dateTime",
+              "value": "2026-04-01T09:00:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "LifecycleInformation",
+      "value": [
+        {
+          "modelType": "Property",
+          "idShort": "currentLifecyclePhase",
+          "valueType": "xs:string",
+          "value": "Production"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ownershipStatus",
+          "valueType": "xs:string",
+          "value": "Manufacturer"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "previousLifecyclePhase",
+          "valueType": "xs:string",
+          "value": "Assembly"
+        }
+      ]
+    },
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "GovernanceMetadata",
+      "value": [
+        {
+          "modelType": "Property",
+          "idShort": "dataVersion",
+          "valueType": "xs:string",
+          "value": "1.0.0"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "lastUpdateTimestamp",
+          "valueType": "xs:dateTime",
+          "value": "2026-03-01T10:15:00Z"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "responsibleActor",
+          "valueType": "xs:string",
+          "value": "EJOT GmbH"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "accessClassification",
+          "valueType": "xs:string",
+          "value": "restricted"
+        }
+      ]
     }
-
   ]
 }
