@@ -1,0 +1,42 @@
+{
+  "id": "urn:dbp:battery:model:001",
+  "idShort": "BatteryModel001",
+  "assetInformation": {
+    "assetKind": "Type",
+    "globalAssetId": "urn:ejot:battery:model:001" 
+  },
+  "submodels": [
+    {
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "urn:dbp:submodel:generalProductInformation:model001"
+        }
+      ]
+    },
+    {
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "urn:dbp:submodel:carbonFootprint:model001"
+        }
+      ]
+    },
+    {
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "urn:dbp:submodel:materialComposition:model001"
+        }
+      ]
+    },
+    {
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "urn:dbp:submodel:performanceDurability:model001"
+        }
+      ]
+    }
+  ]
+}

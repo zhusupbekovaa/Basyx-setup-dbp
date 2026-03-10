@@ -1,12 +1,24 @@
 {
-  "modelType": "AssetAdministrationShell",
   "id": "urn:uuid:aas-battery-module-001",
   "idShort": "BatteryModule001",
+
   "assetInformation": {
     "assetKind": "Instance",
-    "globalAssetId": "urn:uuid:physical-battery-module-001"
+    "globalAssetId": "urn:ejot:battery:module:001"
   },
+
+  "derivedFrom": {
+    "type": "ModelReference",
+    "keys": [
+      {
+        "type": "AssetAdministrationShell",
+        "value": "urn:dbp:battery:model:001"
+      }
+    ]
+  },
+
   "submodels": [
+
     {
       "type": "ModelReference",
       "keys": [
@@ -15,6 +27,37 @@
           "value": "urn:uuid:submodel-general-product-information-battery-001"
         }
       ]
+    },
+
+    {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "urn:dbp:submodel:circularity:battery001"
+        }
+      ]
+    },
+
+    {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "urn:dbp:submodel:ownership:battery001"
+        }
+      ]
+    },
+
+    {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "urn:dbp:submodel:labels:battery001"
+        }
+      ]
     }
+
   ]
 }

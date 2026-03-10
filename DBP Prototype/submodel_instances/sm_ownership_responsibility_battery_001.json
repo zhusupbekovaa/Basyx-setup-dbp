@@ -1,0 +1,7 @@
+{
+  "id": "urn:dbp:submodel:ownership:battery001",
+  "idShort": "OwnershipResponsibilityForBatteries",
+  "kind": "Instance",
+  "semanticId": {},
+  "submodelElements": []
+}
